@@ -13,8 +13,11 @@ class Airport {
 
 /// Interface -> Contratos de uma classe
 abstract class FlyingTransport {
+  /// A Classe [FlyingTransport] possui seus proprios métodos
   void fly(String origin, String destination, List<Passeger> passagers);
 }
+
+/// Classes Concretas implementações do contrato de classe:
 
 class Helicopter implements FlyingTransport {
   @override
