@@ -1,3 +1,4 @@
-# design_patterns
+# Design Patterns
 
-A new Flutter project.
+Repositório de estudo para diversos padrões de projeto.
+
