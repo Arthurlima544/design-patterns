@@ -1,12 +1,5 @@
 enum Country { brazil, usa, russia, portugal }
 
-class Order {
-  final List<Product> products;
-  final Country country;
-
-  Order(this.products, this.country);
-}
-
 class Product {
   final double price;
   final int amount;
@@ -15,6 +8,13 @@ class Product {
     required this.price,
     this.amount = 1,
   });
+}
+
+class Order {
+  final List<Product> products;
+  final Country country;
+
+  Order(this.products, this.country);
 }
 
 /// Responsável por obter o preço total dos pedidos feitos em um e-commerce.
@@ -75,3 +75,4 @@ double encapsulatedGetOrderTotal(Order order) {
 //! manutenção de ambas as classes, se o eccomerce passar a vender para outros 
 //! Paises somente mais um campo nas taxas vai resolver.. e consequentemente o
 //! reduzimos o efeito causado pelas mudanças.
+//! e a mais importante: Atribuimos Uma reposabilidade única para ambas as classes

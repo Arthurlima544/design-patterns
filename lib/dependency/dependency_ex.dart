@@ -6,7 +6,7 @@ import 'package:design_patterns/logger.dart';
 /// em modificações em outra classe.
 ///
 /// Caso seja alterado alguma das propriedades do material pedirá
-///  mudanças na classe Professor
+/// mudanças na classe Professor
 
 class Professor {
   void teach(Course course, int goToPage) {
